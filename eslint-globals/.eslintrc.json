@@ -1,0 +1,9 @@
+{
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
+    "System": "readonly",
+    "trace": "readonly",
+    "debugger": "readonly"
+  }
+}
