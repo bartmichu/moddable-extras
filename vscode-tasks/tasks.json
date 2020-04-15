@@ -1,0 +1,41 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Moddable SDK: Upload on ESP8266",
+      "type": "shell",
+      "command": "mcconfig -m -p esp",
+      "options": {
+        "cwd": "${workspaceFolder}/${relativeFileDirname}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Moddable SDK: Upload and debug on ESP8266",
+      "type": "shell",
+      "command": "mcconfig -d -m -p esp",
+      "options": {
+        "cwd": "${workspaceFolder}/${relativeFileDirname}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Moddable SDK: Upload on Moddable One",
+      "type": "shell",
+      "command": "mcconfig -m -p esp/moddable_one",
+      "options": {
+        "cwd": "${workspaceFolder}/${relativeFileDirname}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Moddable SDK: Upload and debug on Moddable One",
+      "type": "shell",
+      "command": "mcconfig -d -m -p esp/moddable_one",
+      "options": {
+        "cwd": "${workspaceFolder}/${relativeFileDirname}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
