@@ -1,0 +1,34 @@
+{
+  "include": [
+    "$(MODDABLE)/examples/manifest_base.json",
+    "$(MODDABLE)/examples/manifest_piu.json",
+    "$(MODDABLE)/modules/drivers/ili9341/manifest.json"
+  ],
+  "modules": {
+    "*": "./main"
+  },
+  "resources": {
+    "*": [
+      "./main",
+      "./balls"
+    ]
+  },
+  "config": {
+    "screen": "ili9341"
+  },
+  "defines": {
+    "ili9341": {
+      "cs": {
+        "port": null,
+        "pin": 15
+      },
+      "dc": {
+        "port": null,
+        "pin": 2
+      },
+      "spi": {
+        "port": "#HSPI"
+      }
+    }
+  }
+}
